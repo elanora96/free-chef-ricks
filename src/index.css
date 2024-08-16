@@ -1,0 +1,67 @@
+:root {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  font-weight: bold;
+
+  color: rgb(240, 240, 213);
+  background-color: #52008c;
+  background-image: url('./assets/Passion_Purple.gif');
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace;
+  color: #89d615;
+  text-decoration: underline;
+}
+a:hover {
+  color: #99ff00;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main {
+  margin-top: 7.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 320px;
+  max-width: min(100dvw, 1280px);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #b193b3;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
