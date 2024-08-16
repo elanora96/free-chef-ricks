@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'LCDM2B';
+  src: url('../../assets/LCDM2B__.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'WhatsHappened';
+  src: url('../../assets/WhatsHappened.ttf') format('truetype');
+}
+
+.TimeSince {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  justify-content: center;
+}
+
+.clock > h1 {
+  margin: 1rem;
+  color: #38e646;
+  font-family: 'LCDM2B';
+}
+
+.loserContainer {
+  max-width: 100%;
+  text-align: center;
+}
+
+.lostRevenue {
+  font-family: 'WhatsHappened';
+  color: #e64338;
+  text-shadow:
+    6px 6px 0 #350505,
+    -6px -6px 0 #86190a,
+    6px -6px 0 #3a1423,
+    -6px 6px 0 #412828;
+}
