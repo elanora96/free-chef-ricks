@@ -62,8 +62,14 @@ const TimeSince: FC = () => {
       <div className={styles.loserContainer}>
         <h2>
           This is{' '}
-          <span title="Assuming an average of $25,000/month in alcohol sales">
-            guesstimated*
+          <span
+            title="Assuming an average of $25,000/month in alcohol sales"
+            id="cited1"
+          >
+            guesstimated
+            <sup>
+              <a href="#cite1">[1]</a>
+            </sup>
           </span>{' '}
           to have cost the restaurant
         </h2>

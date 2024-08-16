@@ -27,6 +27,7 @@ export default tseslint.config(
             'eslint.config.js',
             'lint-staged.config.js',
             'prettier.config.js',
+            'stylelint.config.js',
           ],
         },
         tsconfigRootDir: import.meta.dirname,

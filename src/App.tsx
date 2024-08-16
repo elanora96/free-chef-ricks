@@ -19,15 +19,17 @@ const Card: FC<PropsWithChildren> = ({ children }) => {
 const App: FC = () => {
   return (
     <>
-      <SupportRibbon url="https://chefricks.com" text="Support Chef Rick's" />
       <Header text="Free Chef Rick's" />
+      <SupportRibbon url="https://chefricks.com" text="Support Chef Rick's" />
       <main>
         <Card>
           <p>
             The State of California&apos;s Department of Alcoholic Beverage
-            Control has fined and suspended Chef Rick&apos;s Ultimately Fine
-            Foods Inc&apos;s License after a sting operation targeting the
-            restaurant
+            Control has{' '}
+            <i>
+              <u>suspended</u>
+            </i>{' '}
+            Chef Rick&apos;s Ultimately Fine Foods Inc&apos;s License
           </p>
           <img className={styles.notice} src={notice}></img>
         </Card>
@@ -35,8 +37,8 @@ const App: FC = () => {
         <Card>
           <TShirt text="Free Chef Rick's" image={Mugshot} />
         </Card>
-        <FloatingGif src={runningMan} />
       </main>
+      <FloatingGif src={runningMan} />
       <Footer />
     </>
   );

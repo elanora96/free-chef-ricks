@@ -1,4 +1,8 @@
-const config = {
+/**
+ * @type {import('prettier').config}
+ */
+
+export default {
   useTabs: false,
   singleQuote: true,
   semi: true,
@@ -11,5 +15,3 @@ const config = {
   endOfLine: 'lf',
   proseWrap: 'preserve',
 };
-
-export default config;

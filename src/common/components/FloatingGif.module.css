@@ -3,6 +3,7 @@
     transform: translateY(100vh);
     opacity: 0.75;
   }
+
   100% {
     transform: translateY(-100vh);
     opacity: 0;
@@ -11,8 +12,10 @@
 
 .floatingGif {
   position: absolute;
-  bottom: 0;
-  animation: floatUp linear infinite;
-  opacity: 0;
   z-index: -1;
+  bottom: 0;
+
+  opacity: 0;
+
+  animation: floatUp linear infinite;
 }
