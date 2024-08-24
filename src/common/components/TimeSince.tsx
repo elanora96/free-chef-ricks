@@ -43,7 +43,8 @@ const TimeSince: FC = () => {
   return (
     <div className={styles.TimeSince}>
       <h2>
-        The first day of the suspension was {suspension.format('MMMM Do, YYYY')}
+        The first day of the Alcoholic Beverage License suspension was{' '}
+        {suspension.format('MMMM Do, YYYY')}
       </h2>
       <h2>As of today, the license has been suspended for:</h2>
       <div className={styles.clock}>
@@ -64,11 +65,11 @@ const TimeSince: FC = () => {
           This is{' '}
           <span
             title="Assuming an average of $25,000/month in alcohol sales"
-            id="cited1"
+            id="cited2"
           >
             guesstimated
             <sup>
-              <a href="#cite1">[1]</a>
+              <a href="#cite2">[2]</a>
             </sup>
           </span>{' '}
           to have cost the restaurant
@@ -76,7 +77,7 @@ const TimeSince: FC = () => {
         <pre>
           <h1 className={styles.lostRevenue}>
             {currencyFormatter.format(
-              -1 * (25000 / 31 / 24 / 60 / 60 / 1000) * tSince.asMilliseconds(),
+              (25000 / 31 / 24 / 60 / 60 / 1000) * tSince.asMilliseconds(),
             )}
           </h1>
           <h1 className={styles.lostRevenue}>In</h1>

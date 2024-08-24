@@ -1,16 +1,20 @@
-.header {
+.headerContainer {
   position: absolute;
   z-index: 999;
   top: 0;
 
+  container: navbar / inline-size;
   overflow: hidden;
 
   width: 100%;
-  margin: 0;
-  padding: 0;
+}
 
-  font-family: 'BD Cartoon Shout', fantasy;
-  color: #e6f5cc;
+.header {
+  height: var(--navbar-height);
+
+  font-family: 'BD Cartoon Shout', Impact, Haettenschweiler, 'Arial Narrow Bold',
+    sans-serif;
+  color: var(--color-primary);
   text-shadow:
     5px 5px 0 #7a2b12,
     -5px -5px 0 #d45d39,
@@ -19,7 +23,13 @@
 
   background-image: linear-gradient(
     to bottom,
-    rgb(0 0 0 / 0%),
-    rgb(1 0 0 / 15%)
+    color-mix(in srgb, #000 0%, transparent),
+    color-mix(in srgb, #000 15%, transparent)
   );
+}
+
+@container navbar (max-width: 640px) {
+  .header {
+    height: calc(var(--navbar-height) + 2rem);
+  }
 }

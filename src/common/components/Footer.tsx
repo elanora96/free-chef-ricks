@@ -1,15 +1,34 @@
 import { FC } from 'react';
 import styles from './Footer.module.css';
+import notice from '@assets/IMG_1898.jpeg';
 
 const Footer: FC = () => {
   return (
-    <p className={styles.footer}>
+    <div className={styles.footer}>
       <ol>
         <li id="cite1">
-          <sup>
-            <a href="#cited1">^</a>
-          </sup>
-          Assuming an average of $25,000/month in alcohol sales
+          <span>
+            <sup>
+              <a href="#cited1">^</a>
+            </sup>
+            <details>
+              <summary>A little backstory (Click to expand)</summary>
+              <p>
+                On August 14th, 2024, the State of California&apos;s Department
+                of Alcoholic Beverage Control suspended Chef Rick&apos;s
+                Ultimately Fine Foods Inc&apos;s Alcoholic Beverage License
+              </p>
+              <img className={styles.image} src={notice}></img>
+            </details>
+          </span>
+        </li>
+        <li id="cite2">
+          <span>
+            <sup>
+              <a href="#cited2">^</a>
+            </sup>
+            Assuming an average of $25,000/month in alcohol sales
+          </span>
         </li>
       </ol>
       <p>
@@ -24,7 +43,7 @@ const Footer: FC = () => {
           the original Chef Rick&apos;s website
         </a>
       </p>
-    </p>
+    </div>
   );
 };
 

@@ -1,0 +1,21 @@
+.Plea {
+  padding: 1em;
+
+  text-align: left;
+
+  background-color: color-mix(in srgb, var(--funky-purple) 40%, transparent);
+  filter: drop-shadow(0 0 2em var(--funky-purple-aura));
+  border: 0.5em double var(--funky-purple-aura);
+
+  p {
+    font-size: 1.5em;
+  }
+}
+
+.Signature {
+  text-align: center;
+}
+
+.CiteLink {
+  text-decoration: none;
+}

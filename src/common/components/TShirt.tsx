@@ -5,7 +5,7 @@ import tshirt from '@assets/white-tshirt-n0j.png';
 
 interface TShirtProps {
   text: string;
-  image: string | null;
+  image?: string;
 }
 
 const TShirt: FC<TShirtProps> = (props) => {
@@ -13,12 +13,8 @@ const TShirt: FC<TShirtProps> = (props) => {
     <div className={styles.tshirtContainer}>
       <img className={styles.tshirt} src={tshirt} />
       <div className={styles.tshirtOverlay}>
-        <p className={styles.tshirtText}>{props.text}</p>
-        {props.image ? (
-          <img className={styles.tshirtImage} src={props.image} />
-        ) : (
-          ''
-        )}
+        <p>{props.text}</p>
+        {props.image ? <img src={props.image} /> : ''}
       </div>
     </div>
   );

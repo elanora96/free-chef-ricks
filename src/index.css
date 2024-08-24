@@ -1,4 +1,11 @@
 :root {
+  --color-primary: #f0f0d5;
+  --color-active: #89d615;
+  --color-more-active: #9f0;
+  --funky-purple: #52008c;
+  --funky-purple-aura: #965e5caa;
+  --navbar-height: 7rem;
+
   overflow-x: hidden;
 
   max-width: 100%;
@@ -8,10 +15,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
-  color: rgb(240 240 213);
+  color: var(--color-primary);
   text-rendering: optimizelegibility;
 
-  background-color: #52008c;
+  background-color: var(--funky-purple);
   background-image: url('./assets/Passion_Purple.gif');
 
   font-synthesis: none;
@@ -20,11 +27,10 @@
 a {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bolder;
-  color: #89d615;
-  text-decoration: underline;
+  color: var(--color-active);
 
   &:hover {
-    color: #9f0;
+    color: var(--color-more-active);
   }
 }
 
@@ -40,42 +46,6 @@ a {
   text-align: center;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  min-width: 320px;
-  max-width: min(100dvw, 1280px);
-  margin-top: 7.5em;
-}
-
 h1 {
-  font-size: 3.2em;
-  line-height: 1;
-}
-
-button {
-  cursor: pointer;
-
-  padding: 0.6em 1.2em;
-
-  font-family: inherit;
-  font-size: 1em;
-  font-weight: 500;
-
-  background-color: #b193b3;
-  border: 1px solid transparent;
-  border-radius: 8px;
-
-  transition: border-color 0.25s;
-
-  &:hover {
-    border-color: #646cff;
-  }
-
-  &:focus,
-  &:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-  }
+  font-size: 3rem;
 }

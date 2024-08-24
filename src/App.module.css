@@ -3,26 +3,13 @@
   src: url('./assets/BD_Cartoon_Shout.ttf') format('truetype');
 }
 
-.notice {
-  will-change: filter;
-  width: 80%;
-  padding: 1.5em;
-  transition: filter 300ms;
-
-  &:hover {
-    filter: drop-shadow(0 0 2em #965e5caa);
-  }
-}
-
-.card {
+.Main {
   display: flex;
-  flex-wrap: wrap;
-  place-content: center;
+  flex-direction: column;
+  justify-content: center;
 
-  max-width: 100%;
-  padding: 2em;
-
-  & > p {
-    font-size: 1.5em;
-  }
+  min-width: 320px;
+  max-width: min(100dvw, 1280px);
+  margin-top: var(--navbar-height);
+  padding: 4rem 0 1rem;
 }

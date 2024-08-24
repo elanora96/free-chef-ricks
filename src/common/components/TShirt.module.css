@@ -5,7 +5,7 @@
 
 .tshirtContainer {
   position: relative;
-  max-width: 85%;
+  max-width: 100%;
 }
 
 .tshirt {
@@ -14,26 +14,31 @@
 
 .tshirtOverlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 27%;
+  left: 27%;
 
+  overflow: hidden;
   display: flex;
   flex-direction: column;
+  gap: 0;
   align-items: center;
 
-  width: 100%;
-  margin-top: 22%;
+  width: 45%;
 
   text-align: center;
-}
 
-.tshirtText {
-  font-family: Moderniz, sans-serif;
-  font-size: min(2.75dvw, 1.75em);
-  font-weight: bolder;
-  color: rgb(27 24 24);
-}
+  * {
+    margin: 0;
+  }
 
-.tshirtImage {
-  width: 37%;
+  p {
+    font-family: Moderniz, sans-serif;
+    font-size: min(3dvw, 2.5em);
+    font-weight: bolder;
+    color: rgb(27 24 24);
+  }
+
+  img {
+    width: 75%;
+  }
 }
