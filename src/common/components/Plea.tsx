@@ -1,9 +1,22 @@
 import type { FC } from 'react';
 import styles from './Plea.module.css';
 
+import gfm from '@assets/GoFundMe.svg';
+
+const GoFundMe = () => {
+  return (
+    <div className={styles.GoFundMe}>
+      <a href="https://www.gofundme.com/f/support-chef-ricks">
+        <img src={gfm} />
+      </a>
+    </div>
+  );
+};
+
 const Plea: FC = () => {
   return (
     <div className={styles.Plea}>
+      <GoFundMe />
       <p>Hello friends!</p>
       <p>
         Since 1989,{' '}
@@ -41,6 +54,11 @@ const Plea: FC = () => {
         subgoals. With your support, we can continue to be the Central
         Coast&apos;s best, most unique, and friendliest neighborhood restaurant.
       </p>
+      <p>
+        You can help by clicking the large gofundme logo below (or above!). Or
+        by dining with us as usual, we&apos;d love to see you!
+      </p>
+      <GoFundMe />
       <div className={styles.Signature}>
         <p>Thank you all very much!!!</p>
         <p>&ndash; Chef Rick Manson</p>

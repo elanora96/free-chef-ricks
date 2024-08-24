@@ -17,7 +17,10 @@ const App: FC = () => {
   return (
     <>
       <Header text="Support Chef Rick's" />
-      <SupportRibbon url="https://chefricks.com" text="Support Chef Rick's" />
+      <SupportRibbon
+        url="https://www.gofundme.com/f/support-chef-ricks"
+        text="Support Chef Rick's"
+      />
       <main className={styles.Main}>
         <Plea />
         <TimeSince />

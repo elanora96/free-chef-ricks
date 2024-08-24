@@ -19,3 +19,26 @@
 .CiteLink {
   text-decoration: none;
 }
+
+.GoFundMe {
+  display: flex;
+  justify-content: center;
+
+  a {
+    display: inline-block;
+    min-height: fit-content;
+    text-decoration: underline;
+  }
+
+  img {
+    min-height: var(--navbar-height);
+    filter: brightness(0) saturate(100%) invert(93%) sepia(89%) saturate(263%)
+      hue-rotate(315deg) brightness(112%) contrast(88%);
+
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(93%) sepia(89%) saturate(263%)
+        hue-rotate(315deg) brightness(112%) contrast(88%)
+        drop-shadow(0 0 2em var(--funky-purple-aura));
+    }
+  }
+}
