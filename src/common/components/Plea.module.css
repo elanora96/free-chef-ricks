@@ -22,15 +22,11 @@
 
 .GoFundMe {
   display: flex;
-  justify-content: center;
-
-  a {
-    display: inline-block;
-    min-height: fit-content;
-    text-decoration: underline;
-  }
+  flex-direction: column;
+  align-items: center;
 
   img {
+    max-width: 100%;
     min-height: var(--navbar-height);
     filter: brightness(0) saturate(100%) invert(93%) sepia(89%) saturate(263%)
       hue-rotate(315deg) brightness(112%) contrast(88%);

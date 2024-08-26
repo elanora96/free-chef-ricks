@@ -1,1 +1,1 @@
-# Free Chef Ricks
+# Support Chef Ricks

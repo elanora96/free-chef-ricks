@@ -7,7 +7,10 @@ const GoFundMe = () => {
   return (
     <div className={styles.GoFundMe}>
       <a href="https://www.gofundme.com/f/support-chef-ricks">
-        <img src={gfm} />
+        <img src={gfm} alt="GoFundMe Logo" />
+      </a>
+      <a href="https://www.gofundme.com/f/support-chef-ricks">
+        https://www.gofundme.com/f/support-chef-ricks
       </a>
     </div>
   );
@@ -55,8 +58,8 @@ const Plea: FC = () => {
         Coast&apos;s best, most unique, and friendliest neighborhood restaurant.
       </p>
       <p>
-        You can help by clicking the large gofundme logo below (or above!). Or
-        by dining with us as usual, we&apos;d love to see you!
+        You can help by checking out the GoFundMe link below (or above!). Or by
+        dining with us as usual, we&apos;d love to see you!
       </p>
       <GoFundMe />
       <div className={styles.Signature}>
