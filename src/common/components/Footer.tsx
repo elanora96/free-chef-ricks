@@ -4,7 +4,7 @@ import notice from '@assets/IMG_1898.jpeg';
 
 const Footer: FC = () => {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <ol>
         <li id="cite1">
           <span>
@@ -43,7 +43,7 @@ const Footer: FC = () => {
           the original Chef Rick&apos;s website
         </a>
       </p>
-    </div>
+    </footer>
   );
 };
 

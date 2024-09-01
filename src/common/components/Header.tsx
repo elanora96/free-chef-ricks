@@ -7,11 +7,11 @@ interface HeaderProps {
 
 const Header: FC<HeaderProps> = (props) => {
   return (
-    <div className={styles.headerContainer}>
-      <header className={styles.header}>
+    <header className={styles.headerContainer}>
+      <div className={styles.header}>
         <h1>{props.text}</h1>
-      </header>
-    </div>
+      </div>
+    </header>
   );
 };
 
